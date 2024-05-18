@@ -43,6 +43,6 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "bash -c .devcontainer/codespace_onCreate.sh",
-  "postStartCommand": "bash -c .devcontainer/codespace_onStart.sh"
+  "postCreateCommand": "bash -c .cs_init/codespace_onCreate.sh",
+  "postStartCommand": "bash -c .cs_init/codespace_onStart.sh"
 }
