@@ -8,4 +8,4 @@ sudo apt -y install nginx neofetch
 
 # backup original and move the provided one to its directories
 sudo mv /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/default.bak000
-sudo cp .cs_init/nginx_init /etc/nginx/sites-enabled/default
+sudo cp .devcontainer/nginxInit /etc/nginx/sites-enabled/default
