@@ -6,4 +6,4 @@ This repository contains all of the preview frameworks that might be implemented
 
 For more information about this change, check out this [Blog](https://mamanyosquad.github.io/blog/20240521).
 
-![Nyotengu](https://game.doaxvv.com/production/html/information/img/SDChara/nyotengu.png)
+<img src="https://game.doaxvv.com/production/html/information/img/SDChara/nyotengu_win.png" alt="Nyotengu" width="200px">
