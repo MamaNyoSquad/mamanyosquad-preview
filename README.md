@@ -2,15 +2,13 @@ _Updated 24 May 2024 UTC_
 
 # #MamaNyoSquad (Preview)
 
+_**Enter the universe through the eyes of the Tengu! 💕**_
+
 This repository contains all of the preview frameworks that might be implemented into upstream (`MamaNyoSquad/mamanyosquad.github.io`)! This is to ensure that the website follows a new "unified" design language that works well with all devices!
 
 For more information about this change, check out this [Blog](https://mamanyosquad.github.io/blog/20240521).
 
 <img src="https://game.doaxvv.com/production/html/information/img/SDChara/nyotengu_win.png" alt="nyotengu_win.png" width="190px">
-
-<br>
-
-<div style="width: 475px; display: auto; border: 4px solid gray; padding: 9.5px 19px;">
 
 ## Table of Contents
 
@@ -18,10 +16,6 @@ For more information about this change, check out this [Blog](https://mamanyosqu
 - [How This Works](#how-this-works)
 - [Contributing to the Project](#contributing-to-the-project)
 - [License](#license)
-
-</div>
-
-<br>
 
 <hr style="border-top: 4px solid gray">
 
@@ -39,9 +33,11 @@ TBA
 
 # Contributing to the Project
 
-Fugiat officia veniam quis laborum exercitation deserunt cillum consectetur culpa ipsum exercitation. Deserunt labore reprehenderit pariatur velit ex ipsum nisi. Nostrud occaecat deserunt eiusmod amet voluptate fugiat exercitation veniam eiusmod consectetur dolore voluptate veniam. Laboris anim elit enim aute sint velit. Commodo quis consectetur commodo nulla laborum.
+We're open for collaborations with fellow frontend developers who aim to improve the website! You can check out the following details on how to contribute, preview, and spin your instance in our [documentation](CONTRIBUTING.md)
 
-Minim excepteur irure ut ullamco. Veniam non esse labore sunt aute. Elit in proident sint amet veniam occaecat occaecat. Ullamco proident ea non ullamco cillum officia ea commodo laborum est mollit ad eiusmod incididunt. Elit occaecat exercitation nisi nostrud amet labore eiusmod deserunt. Excepteur proident irure culpa do eu nulla eu. Nostrud officia labore labore aute non veniam ad adipisicing ullamco.
+This repository follows our policies on Code of Conduct. Learn more about our approach in [our statement](CODE_OF_CONDUCT.md).
+
+Concerns? You can contact the Squad via [email](mailto:mamanyosquad@outlook.com) or through our [G.Mgr](mailto:jelsa14018@gmail.com).
 
 # License
 
