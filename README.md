@@ -33,7 +33,7 @@ TBA
 
 # Contributing to the Project
 
-We're open for collaborations with fellow frontend developers who aim to improve the website! You can check out the following details on how to contribute, preview, and spin your instance in our [documentation](CONTRIBUTING.md)
+We're open for collaborations with fellow frontend developers who aim to improve the website! You can check out the following details on how to contribute, preview, and spin your instance in our [documentation](CONTRIBUTING.md).
 
 This repository follows our policies on Code of Conduct. Learn more about our approach in [our statement](CODE_OF_CONDUCT.md).
 
