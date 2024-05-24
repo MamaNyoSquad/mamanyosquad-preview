@@ -8,7 +8,7 @@ This repository contains all of the preview frameworks that might be implemented
 
 For more information about this change, check out this [Blog](https://mamanyosquad.github.io/blog/20240521).
 
-<img src="https://game.doaxvv.com/production/html/information/img/SDChara/nyotengu_win.png" alt="nyotengu_win.png" width="190px">
+<img src="https://game.doaxvv.com/production/html/information/img/SDChara/nyotengu_win.png" alt="Nyotengu, the symbol of #MamaNyoSquad" width="190px">
 
 ## Table of Contents
 
@@ -29,7 +29,15 @@ Note that some web features -- like #MamaNyoSquad Publishing -- are excluded fro
 
 # How This Works
 
-TBA
+This repository starts off with two main branches: `info` and `replicate-for-commit`. The first one contains all the necessary information to get started with the project, while the second contains first few files needed to start working on the project.
+
+![list of branches as of 24 May 2024 UTC](info_files/branch_info.png)
+
+Branches replicated from `replicate-for-commit` will have its pre-defined `.devcontainer` which can be spun up at any time with GitHub Codespaces (powered by VS Code).
+
+Powered by [nginx](https://nginx.org), necessary files are pre-outlined and can be customized to your own liking. Granted, they must follow the [GitHub Pages](https://github.io) framework on its file structure.
+
+Full info about how this works will be in the [documentation](CONTRIBUTING.md).
 
 # Contributing to the Project
 
