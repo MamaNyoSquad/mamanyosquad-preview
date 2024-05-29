@@ -1,6 +1,6 @@
 {
   "name": "20240518",
-  "image": "mcr.microsoft.com/devcontainers/universal",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
   "features": {},
   "customizations": {
     "vscode": {
