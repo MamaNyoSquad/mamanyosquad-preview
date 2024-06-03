@@ -1,0 +1,38 @@
+.heroHead1-fhd {
+  background-image: url("/assets/images/hero/Helena_hero.jpg");
+  background-size: 150%;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+.heroHead2-fhd {
+  background: linear-gradient(120deg, #00000000 40%, #161224);
+  padding: 285px 190px;
+  padding-top: 380px;
+  overflow: auto;
+}
+.heroSlogan-fhd {
+  width: 45%;
+  float: right;
+  text-align: center;
+}
+
+.foot-wide {
+  float: right;
+  width: 75%;
+  text-align: right;
+}
+
+.social-icon {
+  pointer-events: visible;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3.8px 5.7px 0 5.7px;
+  padding: 2.85px;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+}
+.social-icon:hover {
+  transform: scale(1.19);
+}

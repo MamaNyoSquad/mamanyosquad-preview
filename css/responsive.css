@@ -1,0 +1,20 @@
+/* header */
+@media screen and (max-width: 665px) {
+  .desktop { display: none; }
+  .mobile { display: block; }
+}
+@media screen and (min-width: 665px) {
+  .desktop { display: block; }
+  .mobile { display: none; }
+}
+
+/* hero head */
+@media screen and (min-width: 1420px) {
+  .hero-fhd { display: block; }
+}
+@media screen and (min-width: 1080px) and (max-width: 1420px) {
+  .hero-fhd { display: none; }
+}
+@media screen and (max-width: 1080px) {
+  .hero-fhd { display: none; }
+}
