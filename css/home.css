@@ -1,3 +1,16 @@
+.github-fork-ribbon:before { background-color: #161224; }
+
+.notFoundHead {
+  background-color: #000000;
+  background-image: url("/assets/images/background/nyoBG.png");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 285px 19px 190px 19px;
+  text-align: center;
+}
+
 .heroHead1-fhd {
   background-image: url("/assets/images/hero/Helena_hero.jpg");
   background-size: 150%;
@@ -16,10 +29,30 @@
   text-align: center;
 }
 
-.foot-wide {
-  float: right;
+.heroHead1-hd {
+  background-image: url("/assets/images/hero/Helena_hero.jpg");
+  background-size: cover;
+  background-position: 45% center;
+  background-repeat: no-repeat;
+}
+.heroHead2-hd {
+  background-color: #161224a0;
+  padding: 285px 19px;
+  padding-top: 380px;
+  overflow: auto;
+}
+.heroSlogan-hd {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sloganLogo-hd {
+  padding: 0 28.5px;
+}
+
+#footPage {
   width: 75%;
-  text-align: right;
 }
 
 .social-icon {

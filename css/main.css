@@ -1,3 +1,5 @@
+/* core stylesheets */
+
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -32,7 +34,22 @@ img, video, iframe {
   font-weight: 700;
   position: relative;
   display: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+/* uncomment these below if the background colors contradict with default <a> colors, comment if otherwise */
+/*
+#specialBanner > a:link, a:visited {
+  color: #ffffff;
+}
+#specialBanner > a:hover {
+  color: #bbbbbb;
+}
+#specialBanner > a:active {
+  color: #dddddd;
+}
+*/
 
 header {
   width: 100vw;
@@ -58,6 +75,28 @@ header {
   justify-content: right;
   align-items: center;
 }
+#mobile-navPanel {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 3800;
+  padding: 28.5px 38px 19px 38px;
+  background-color: #161224;
+  text-align: right;
+  box-shadow: 0 9.5px 19px #ff0000a0;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+  transform: translateY(-19rem);
+  background-image: url("/assets/images/background/nyoBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.closeNav {
+  margin-left: 19px;
+}
 
 footer {
   background-color: #161224;
@@ -82,12 +121,21 @@ button {
   text-decoration: none;
   margin: 9.5px 1.9px 28.5px 1.9px;
   cursor: pointer;
-  -webkit-transition: 0.95s;
-  -moz-transition: 0.95s;
-  -o-transition: 0.95s;
-  transition: 0.95s;
+  -webkit-transition: 0.475s;
+  -moz-transition: 0.475s;
+  -o-transition: 0.475s;
+  transition: 0.475s;
 }
 button:hover {
   background-color: #ff0000;
-  border: solid 3.8px #06a8ff;
+  border: solid 2.85px #06a8ff;
+}
+button:active {
+  background-color: #ffffff;
+  border: solid 2.85px #06a8ff;
+  color: #ff0000;
+  -webkit-transition: 0.19s;
+  -moz-transition: 0.19s;
+  -o-transition: 0.19s;
+  transition: 0.19s;
 }

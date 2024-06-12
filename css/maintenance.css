@@ -1,0 +1,12 @@
+.heroMaintenance1 {
+  background-image: url("/assets/images/venusIsland/vi_2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.heroMaintenance2 {
+  background-color: #161224a0;
+  padding: 285px 19px;
+  padding-top: 380px;
+  text-align: center;
+}

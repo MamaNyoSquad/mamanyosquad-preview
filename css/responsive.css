@@ -11,10 +11,21 @@
 /* hero head */
 @media screen and (min-width: 1420px) {
   .hero-fhd { display: block; }
+  .hero-hd { display: none; }
 }
 @media screen and (min-width: 1080px) and (max-width: 1420px) {
   .hero-fhd { display: none; }
+  .hero-hd { display: block; }
 }
 @media screen and (max-width: 1080px) {
   .hero-fhd { display: none; }
+  .hero-hd { display: block; }
+}
+
+/* view slogan (only works on .hero-hd) */
+@media screen and (min-width: 460px) and (max-width: 1420px) {
+  .viewSlogan-hd { display: block; }
+}
+@media screen and (max-width: 460px) {
+  .viewSlogan-hd { display: none; }
 }
