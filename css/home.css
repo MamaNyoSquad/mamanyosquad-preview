@@ -1,4 +1,4 @@
-.github-fork-ribbon:before { background-color: #161224; }
+.github-fork-ribbon:before { background-color: #161224 !important; }
 
 .notFoundHead {
   background-color: #000000;
@@ -16,6 +16,7 @@
   background-size: 150%;
   background-position: center 40%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .heroHead2-fhd {
   background: linear-gradient(120deg, #00000000 40%, #161224);
@@ -34,6 +35,7 @@
   background-size: cover;
   background-position: 45% center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .heroHead2-hd {
   background-color: #161224a0;
