@@ -10,7 +10,7 @@ function init() {
 }
 
 function showVersion() {
-  document.getElementById("siteVersion").innerHTML = "v20240518.4.23-20240614_preview";
+  document.getElementById("siteVersion").innerHTML = "v20240518.4.25-20240622_preview";
 }
 
 // js clock code adapted from https://jsfiddle.net/mplungjan/mQrJn 
