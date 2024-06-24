@@ -108,6 +108,12 @@ footer {
   font-size: small !important;
   margin: 0 9.5px;
 }
+.footText > a:link, a:visited {
+  color: #ffffff;
+}
+.footText > a:hover, a:active {
+  color: #dcc6bb;
+}
 
 button {
   background-color: #161224;
