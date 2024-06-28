@@ -10,7 +10,7 @@ function init() {
 }
 
 function showVersion() {
-  document.getElementById("siteVersion").innerHTML = "v20240518.4.32-20240625_preview";
+  document.getElementById("siteVersion").innerHTML = "v20240518.4.53-20240628_preview";
 }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock

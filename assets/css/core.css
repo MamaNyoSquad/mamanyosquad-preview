@@ -1,5 +1,7 @@
 /* core stylesheets */
 
+@import url("/assets/css/fonts.css");
+
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -23,33 +25,6 @@ img, video, iframe {
   font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
   color: #bbbbbb;
 }
-
-#specialBanner {
-  /* please note that these are the default values. to programmatically modify them, please use banner.js */
-  font-family: "Poppins", "Noto Sans JP", sans-serif !important;
-  padding: 19px 38px;
-  background-color: #161224;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
-  position: relative;
-  display: none;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-/* uncomment these below if the background colors contradict with default <a> colors, comment if otherwise */
-/*
-#specialBanner > a:link, a:visited {
-  color: #ffffff;
-}
-#specialBanner > a:hover {
-  color: #bbbbbb;
-}
-#specialBanner > a:active {
-  color: #dddddd;
-}
-*/
 
 header {
   width: 100vw;
@@ -144,4 +119,69 @@ button:active {
   -moz-transition: 0.19s;
   -o-transition: 0.19s;
   transition: 0.19s;
+}
+
+.xvvNotify {
+  display: inline-block;
+}
+.xvvEvent {
+  display: inline-block;
+  margin-right: 19px;
+}
+
+.xvvNotify:hover {
+  color: #ff0000;
+}
+.xvvEvent:hover {
+  color: #06a8ff;
+}
+
+/* base dialog */
+dialog {
+  position: relative;
+  width: 950px;
+  max-height: 100%;
+  max-height: 100%;
+  border-radius: 19px;
+  max-width: 100%;
+  background-color: #161224;
+  border: none;
+  color: inherit;
+  text-align: center;
+  padding: 0;
+}
+dialog:focus {
+  outline: 0;
+}
+dialog::backdrop {
+  background-color: #16122480;
+}
+dialog > span { /* close button */
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 19px 19px 0 0;
+  padding: 0 !important;
+  color: #ffffff;
+}
+.xvvModalEvt, .xvvModalEvt:hover {
+  color: #161224;
+}
+
+/* xvvNotify() */
+#xvvNtf {
+  padding: 19px;
+}
+
+/* xvvEvent() */
+#xvvEvt {
+  background-color: #ffffff !important;
+  height: 712.5px;
+}
+dialog > iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: all;
 }

@@ -26,7 +26,6 @@
       /* css args here */
       @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts icons */
       @import url("/assets/css/core.css");
-      @import url("/assets/css/fontlist.css");
       @import url("/assets/css/responsive.css");
       @import url("/assets/css/home.css");
     </style>
@@ -34,11 +33,10 @@
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
     <script src="/assets/js/home.js" type="text/javascript"></script>
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
-    <script src="/assets/js/banner.js" type="text/javascript"></script>
+    <script src="/assets/js/event.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
-        startBanner();
       }
     </script>
     <script type="text/javascript">
@@ -47,6 +45,8 @@
   </head>
   <body onload="init()">
     <div id="mobile-navPanel" class="mobile">
+      <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
+      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
       <span class="material-symbols-rounded" title="See all involved events">event</span>
       <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing">book</span>
       <span class="material-symbols-rounded" title="Read more from the SquadMates">rss_feed</span>
@@ -56,8 +56,10 @@
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img src="/assets/svg/logo/MamaNyoSquad.svg" alt="#MamaNyoSquad" width="190px">
+          <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
           <div class="linkRefs">
+            <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
+            <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
             <span class="material-symbols-rounded" title="See all involved events">event</span>
             <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing">book</span>
             <span class="material-symbols-rounded" title="Read more from the SquadMates">rss_feed</span>
@@ -110,7 +112,6 @@
         </div>
       </div>
     </div>
-    <div id="specialBanner"></div>
     <footer> <!-- footer -->
       <div id="footPage">
         <div>
@@ -123,7 +124,7 @@
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank">a proud brand of tbmassoc</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
       </div>
     </footer>
   </body>
