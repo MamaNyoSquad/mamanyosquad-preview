@@ -74,7 +74,7 @@ header {
 }
 
 footer {
-  background-color: #161224;
+  background-color: #000000;
   padding: 19px 38px;
   overflow: auto;
 }
@@ -121,11 +121,16 @@ button:active {
   transition: 0.19s;
 }
 
+/* toggle between "inline-block" and "none" if there are active notifications */
+/* for .xvvNotify, uncomment "margin-right" if it'll be the only one in the navbar */
 .xvvNotify {
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
+  /* margin-right: 19px; */
 }
 .xvvEvent {
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   margin-right: 19px;
 }
 
@@ -161,17 +166,17 @@ dialog > span { /* close button */
   top: 0;
   right: 0;
   display: block;
-  margin: 19px 19px 0 0;
+  margin: 9.5px 9.5px 0 0;
   padding: 0 !important;
   color: #ffffff;
-}
-.xvvModalEvt, .xvvModalEvt:hover {
-  color: #161224;
 }
 
 /* xvvNotify() */
 #xvvNtf {
   padding: 19px;
+}
+.xvvModalNtf, .xvvModalNtf:hover {
+  color: #ffffff;
 }
 
 /* xvvEvent() */
@@ -184,4 +189,17 @@ dialog > iframe {
   height: 100%;
   border: 0;
   pointer-events: all;
+}
+.xvvModalEvt, .xvvModalEvt:hover {
+  color: #161224;
+}
+
+/* feed layout */
+div[feed] {
+  width: 100vw;
+  padding: 19px;
+}
+div[feed] > div {
+  width: calc(190px * 5);
+  margin: 0 auto;
 }

@@ -1,14 +1,12 @@
 function xvvNotify() {
 
   document.body.innerHTML += `
-    <dialog id="xvvNtf" onclick="closeModal('xvvNtfClose')">
+    <dialog id="xvvNtf">
+      <span class="material-symbols-rounded xvvModalNtf" title="Close" onclick="closeModal('xvvNtfClose')">close</span>
       <p>
         This dialog contains all of the urgent information that is required to be
         displayed to the end-users. It will be populated once there are enough info.
       </p>
-      <p style="padding-top: 2.85rem;"><i>
-        Click anywhere to dismiss...
-      </i></p>
     </dialog>
   `;
 

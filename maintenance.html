@@ -36,6 +36,7 @@
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
     <script src="/assets/js/event.js" type="text/javascript"></script>
     <script src="/assets/js/maintenance.js" type="text/javascript"></script>
+    <script src="/assets/js/changeLang.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
@@ -82,9 +83,33 @@
     <div class="hero"> <!-- hero section -->
       <div class="heroMaintenance1">
         <div class="heroMaintenance2">
-          <h1>Maintenance Routines</h1>
+          <h1>Maintenance Tracker</h1>
+          <span>Last updated</span>
+          <br>
+          <span id="modifiedDate">fetching time and date...</span>
         </div>
       </div>
+    </div>
+    <div feed>
+      <div>
+        <div id="ja" lang="ja">
+          <h2>日本語版</h2>
+          <span><span onclick="cLang('en')">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
+          <p>asdfghjkl</p>
+        </div>
+        <div id="en" lang="en">
+          <h2>Japanese Edition</h2>
+          <span><b>English</b>&ensp;&#8226;&ensp;<span onclick="cLang('ja')">Japanese</span></span>
+          <p>asdfghjkl</p>
+        </div>
+        <br>
+        <h2>Global Edition</h2>
+        <p>asdfghjkl</p>
+      </div>
+    </div>
+    <div>
+      <button onclick="viewMaintenance('maintenance/42435', 'ja')">Japanese</button>
+      <button onclick="viewMaintenance('maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en', 'gl')">Global</button>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">
@@ -92,9 +117,8 @@
           <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/github.svg" width="28.5px" alt="GitHub" title="Check out our GitHub repository" onclick="window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io')">
           <img class="social-icon" src="/assets/svg/social/X.svg" width="28.5px" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="window.open('https://x.com/MamaNyoSquad')">
           <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/youtube.svg" width="28.5px" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="window.open('https://youtube.com/@MamaNyoSquad')">
-          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
+          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
         </div>
-        <br>
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime">Fetching time...</span></p>
         <br>

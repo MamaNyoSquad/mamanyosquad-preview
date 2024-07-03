@@ -3,10 +3,25 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .heroMaintenance2 {
   background-color: #161224a0;
   padding: 285px 19px;
   padding-top: 380px;
   text-align: center;
+}
+
+div[feed] > div > div > span {
+  font-size: medium;
+  text-transform: uppercase;
+}
+div[feed] > div > div > span > span {
+  cursor: pointer;
+}
+div[feed] > div > div > span > span:hover {
+  color: #ff0000;
+}
+#ja {
+  display: none;
 }
