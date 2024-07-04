@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
     <style type="text/css">
       /* css args here */
-      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts icons */
       @import url("/assets/css/core.css");
       @import url("/assets/css/responsive.css");
       @import url("/assets/css/home.css");
@@ -35,12 +34,15 @@
     <script src="/assets/js/home.js" type="text/javascript"></script>
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
     <script src="/assets/js/event.js" type="text/javascript"></script>
-    <script src="/assets/js/maintenance.js" type="text/javascript"></script>
     <script src="/assets/js/changeLang.js" type="text/javascript"></script>
+    <script src="/assets/js/maintenance.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
         showMaintenance();
+        // reference: start month, start day, start hr, start min, end month, end day, end hr, end min, timezone
+        jpMaint(7, 4, 12, 0, 7, 4, 17, 0, 9);
+        glMaint(7, 4, 2, 30, 7, 4, 6, 30, 0);
       }
     </script>
     <script type="text/javascript">
@@ -93,23 +95,73 @@
     <div feed>
       <div>
         <div id="ja" lang="ja">
-          <h2>日本語版</h2>
+          <h2>日本語版 <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/lun_icon.png" alt=""></h2> <!-- ja-jp, translation provided by DeepL -->
           <span><span onclick="cLang('en')">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
-          <p>asdfghjkl</p>
+          <p>メンテナンスルーチンが発表されました：</p>
+          <ul>
+
+            <li important id="impt-ja_jp">TODO：重要なイベント</li>
+            <!-- TODO: add some data here if there are more than just displayed below,
+            and comment these two below if they are not included in the Routine. -->
+            
+            <!-- <li>TODO</li> -->
+
+            <li>予定のイベント</li>
+            <li>不具合の修正</li>
+
+          </ul>
+          <p>
+            <span id="maintDate-ja_jp">【データの取得...】</span>午前<span 
+              id="stTime-ja_jp"
+              >【データの取得...】</span
+            >から午前<span id="edTime-ja_jp">【データの取得...】</span>までVITの予定だ。
+          </p>
+          <button onclick="viewMaintenance('maintenance/42435', 'ja')">詳細へ</button>
         </div>
-        <div id="en" lang="en">
-          <h2>Japanese Edition</h2>
+        <div id="en" lang="en"> <!-- ja-en -->
+          <h2>Japanese Edition <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/lun_icon.png" alt=""></h2>
           <span><b>English</b>&ensp;&#8226;&ensp;<span onclick="cLang('ja')">Japanese</span></span>
-          <p>asdfghjkl</p>
+          <p>A Maintenance Routine has been issued regarding the following:</p>
+          <ul>
+
+            <li important id="impt-en_jp">TODO: Important Event</li>
+            <!-- TODO: add some data here if there are more than just displayed below,
+            and comment these two below if they are not included in the Routine. -->
+            
+            <!-- <li>TODO</li> -->
+
+            <li>Updated Events</li>
+            <li>Bug Fixes</li>
+
+          </ul>
+          <p>
+            It's scheduled on <span id="maintDate-en_jp">[fetching data...]</span> from
+            <span id="stTime-en_jp">[fetching data...]</span> to
+            <span id="edTime-en_jp">[fetching data...]</span> VIT.
+          </p>
+          <button onclick="viewMaintenance('maintenance/42435', 'ja')">Details</button>
         </div>
-        <br>
-        <h2>Global Edition</h2>
-        <p>asdfghjkl</p>
+        <h2>Global Edition <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/mis_icon.png" alt=""></h2> <!-- en_gl -->
+        <p>A Maintenance Routine has been issued regarding the following:</p>
+        <ul>
+
+          <li important id="impt-en_gl">TODO: Important Event</li>
+          <!-- TODO: add some data here if there are more than just displayed below,
+          and comment these two below if they are not included in the Routine. -->
+          
+          <!-- <li>TODO</li> -->
+
+          <li>Updated Events</li>
+          <li>Bug Fixes</li>
+
+        </ul>
+          <p>
+            It's scheduled on <span id="maintDate-en_gl">[fetching data...]</span> from
+            <span id="stTime-en_gl">[fetching data...]</span> to
+            <span id="edTime-en_gl">[fetching data...]</span> VIT.
+          </p>
+      <button onclick="viewMaintenance('maint_gl_0613_240704_1_0_65b04c6e3328d16cbae905858d970244a5d5ca952ce5b3f83b6c614b65da6991_en', 'gl')">Details</button>
       </div>
-    </div>
-    <div>
-      <button onclick="viewMaintenance('maintenance/42435', 'ja')">Japanese</button>
-      <button onclick="viewMaintenance('maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en', 'gl')">Global</button>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">

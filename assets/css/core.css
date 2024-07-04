@@ -1,6 +1,6 @@
 /* core stylesheets */
 
-@import url("/assets/css/fonts.css");
+@import url("/assets/css/fonts.css"); /* all the other fonts */
 
 img, video, iframe {
   max-width: 100%;
