@@ -37,6 +37,7 @@
       ]
     }
   },
+  "forwardPorts": [1119],
   "portsAttributes": {
     "1119": {
       "label": "previewSite",
