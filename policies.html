@@ -51,7 +51,7 @@
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
         <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.open('/', '_self')">home</span>
+        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
           </div>
         </div>
       </header>
@@ -59,7 +59,7 @@
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
         <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.open('/', '_self')">home</span>
+        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
         </div>
       </header>
     </div>
@@ -74,8 +74,9 @@
       <div>
         <div policySheet id="ja" lang="ja"> <!-- ja -->
           <span><span changeLang onclick="cLang('en')">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
-          <br><br>
+          <br>
           <span enfUpd>強制される：<span id="policyDate-ja">【データの取得...】</span></span>
+          <br><br>
           <div> <!-- general policies -->
             <h2>サイトポリシー</h2>
             <p>
@@ -107,6 +108,7 @@
               ほとんどのコンテンツは、<strong>株式会社コーエーテクモゲームス</strong>から提供されていますが、その他のコンテンツは、それぞれのページで引用されている場合があります。詳しくは「コンテンツポリシー」をご覧ください。
             </p>
           </div>
+          <br>
           <div> <!-- content policies -->
             <h2>コンテンツポリシー</h2>
             <p>
@@ -180,8 +182,9 @@
         </div>
         <div policySheet id="en" lang="en"> <!-- en -->
           <span><b>English</b>&ensp;&#8226;&ensp;<span changeLang onclick="cLang('ja')">Japanese</span></span>
-          <br><br>
+          <br>
           <span enfUpd>Enforced: <span id="policyDate-en">[fetching data...]</span></span>
+          <br><br>
           <div> <!-- general policies -->
             <h2>General Site Policies</h2>
             <p>
@@ -222,6 +225,7 @@
               more info, see "Content Policies".
             </p>
           </div>
+          <br>
           <div> <!-- content policies -->
             <h2>Content Policies</h2>
             <p>
