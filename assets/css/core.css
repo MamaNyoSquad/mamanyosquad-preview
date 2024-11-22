@@ -131,14 +131,13 @@ button:active {
   display: inline-block;
   /* margin-right: 19px; */
 }
+.xvvNotify:hover {
+  color: #ff0000;
+}
 .xvvEvent {
   /* display: none; */
   display: inline-block;
   margin-right: 19px;
-}
-
-.xvvNotify:hover {
-  color: #ff0000;
 }
 .xvvEvent:hover {
   color: #06a8ff;
@@ -197,7 +196,18 @@ dialog > iframe {
   color: #161224;
 }
 
-/* feed layout */
+/* article layout */
+.heroBack {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.heroFore {
+  background-color: #161224a0;
+  padding: calc(285px + 95px) 19px 285px 19px;
+  text-align: center;
+}
 div[feed] {
   width: 100vw;
   padding: 19px;
