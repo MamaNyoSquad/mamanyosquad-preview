@@ -2,7 +2,7 @@ function xvvNotify() {
 
   document.body.innerHTML += `
     <dialog id="xvvNtf">
-      <span class="material-symbols-rounded xvvModalNtf" title="Close" onclick="closeModal('xvvNtfClose')">close</span>
+      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvNtfClose')">close</span>
       <p>
         This dialog contains all of the urgent information that is required to be
         displayed to the end-users. It will be populated once there are enough info.
@@ -19,7 +19,7 @@ function xvvEvent() {
 
   document.body.innerHTML += `
     <dialog id="xvvEvt">
-      <span class="material-symbols-rounded xvvModalEvt" title="Close" onclick="closeModal('xvvEvtClose')">close</span>
+      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvEvtClose')">close</span>
       <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
     </dialog>
   `;

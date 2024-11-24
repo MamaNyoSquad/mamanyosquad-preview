@@ -28,3 +28,17 @@ function mobilePanelClose() {
   var navPanel = document.getElementById("mobile-navPanel").style;
   navPanel.transform = "translateY(-19rem)";
 }
+
+function transcriptShow(file) { // anniversary transcript
+
+  document.body.innerHTML += `
+    <dialog id="xvvEvt">
+      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvEvtClose')">close</span>
+      <iframe src="/assets/pdf/` + file + `_transcript.pdf"></iframe>
+    </dialog>
+  `;
+
+  // execute Modal
+  document.getElementById("xvvEvt").showModal();
+
+}

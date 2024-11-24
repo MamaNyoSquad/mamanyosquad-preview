@@ -86,10 +86,10 @@ footer {
   font-size: small !important;
   margin: 0 9.5px;
 }
-.footText > a:link, a:visited {
+.footText > [tbmassoc]:link, [tbmassoc]:visited {
   color: #ffffff;
 }
-.footText > a:hover, a:active {
+.footText > [tbmassoc]:hover, [tbmassoc]:active {
   color: #dcc6bb;
 }
 
@@ -169,17 +169,25 @@ dialog > span { /* close button */
   right: 0;
   display: block;
   margin: 9.5px 9.5px 0 0;
-  padding: 0 !important;
+  padding: 9.5px !important;
+  aspect-ratio: 1 / 1;
+  background-color: #161224;
+  border-radius: 50%;
   color: #ffffff;
+  box-shadow: 0 0 4px #16122440, 0 4px 8px #16122480;
+  -webkit-transition: 0.475s !important;
+  -moz-transition: 0.475s !important;
+  -o-transition: 0.475s !important;
+  transition: 0.475s !important;
+}
+dialog > span:hover {
+  background-color: #ff0000;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+  color: #ffffff !important;
 }
 
 /* xvvNotify() */
-#xvvNtf {
-  padding: 19px;
-}
-.xvvModalNtf, .xvvModalNtf:hover {
-  color: #ffffff;
-}
+#xvvNtf { padding: 19px; }
 
 /* xvvEvent() */
 #xvvEvt {
@@ -192,28 +200,44 @@ dialog > iframe {
   border: 0;
   pointer-events: all;
 }
-.xvvModalEvt, .xvvModalEvt:hover {
-  color: #161224;
-}
 
 /* article layout */
 .heroBack {
+  position: -webkit-sticky;
+  position: sticky;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: -19;
 }
 .heroFore {
   background-color: #161224a0;
   padding: calc(285px + 95px) 19px 285px 19px;
   text-align: center;
 }
-div[feed] {
+[feed] {
   width: 100vw;
   padding: 19px;
 }
-div[feed] > div {
+[feed] > div {
   width: calc(190px * 5);
   max-width: 100%;
   margin: 0 auto;
+}
+
+/* footer */
+.social-icon {
+  pointer-events: visible;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3.8px 5.7px 0 5.7px;
+  padding: 2.85px;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+}
+.social-icon:hover {
+  transform: scale(1.19);
 }
